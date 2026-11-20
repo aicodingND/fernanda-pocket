@@ -1,418 +1,523 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fernanda Ramirez · Blonde specialist in Richmond, CA</title>
-<meta name="description" content="Fernanda Ramirez, sunkissed and corrective blonde specialist at Maribel's Beauty Salon, 12669 San Pablo Ave, Richmond, CA. Book a consultation in English or Spanish.">
-<meta name="theme-color" content="#f6e6e8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fernanda Ramirez: four directions for a page that books · Page Studio proposal</title>
+<meta name="description" content="A design proposal for Fernanda Ramirez, blonde specialist in Richmond, CA: four web-page directions, a recommendation, price, rollout and the numbers that would say it is working.">
 <link rel="stylesheet" href="fonts/fonts.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HairSalon",
-  "name": "Fernanda Ramirez at Maribel's Beauty Salon",
-  "description": "Sunkissed and corrective blonde specialist. Precision cuts and colour, in English and Spanish.",
-  "address": { "@type": "PostalAddress", "streetAddress": "12669 San Pablo Ave", "addressLocality": "Richmond", "addressRegion": "CA", "postalCode": "94805", "addressCountry": "US" },
-  "sameAs": ["https://www.instagram.com/fernanda_hairbeuty/"],
-  "knowsLanguage": ["en", "es"],
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "19:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "18:00" }
-  ]
-}
-</script>
 <style>
 :root{
-  --blush:#f6e6e8; --blush-2:#eed6da; --ink:#231a1c; --ink-2:#5e4b50; --rose:#b9325d; --espresso:#3d2e21;
-  --line:#dcc3c8; --paper-white:#fff7f9; --r:16px;
-  --display:"Bricolage Grotesque", system-ui, sans-serif; --text:"Public Sans", system-ui, sans-serif;
-  --fs-1:13px; --fs0:14px; --fs1:16px; --fs2:20px; --fs3:clamp(30px, 7.5vw, 40px);
-  --ease:cubic-bezier(.2,.7,.2,1);
+  --paper:#f5f1ea; --paper-2:#ece5d9; --ink:#1d1916; --ink-2:#5c5249; --rule:#d8cfc2; --espresso:#3d2e21; --honey:#a97d4c;
+  --s1:.8125rem; --s2:.9375rem; --s3:1.0625rem; --s4:1.375rem; --s5:2rem; --s6:clamp(2.5rem,1.2rem + 4.2vw,4.5rem);
+  --max:1180px; --gutter:clamp(1.25rem,4vw,3.5rem);
 }
 *{box-sizing:border-box}
-html{background:var(--blush)}
-body{margin:0;background:var(--blush);color:var(--ink);font:400 var(--fs1)/1.5 var(--text);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-img{max-width:100%}
-a{color:inherit}
-h1,h2,h3,p,ul,figure{margin:0}
-ul{padding:0;list-style:none}
-button{font:inherit;color:inherit}
-:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:4px}
-.skip{position:absolute;left:-999px;top:10px;z-index:20;background:var(--ink);color:var(--paper-white);padding:12px 16px;border-radius:var(--r);text-decoration:none;font-weight:600}
-.skip:focus{left:16px}
-
-/* frame */
-.wrap{max-width:480px;margin:0 auto;padding:0 20px 112px}
-.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0 10px}
-.handle{display:inline-flex;align-items:center;min-height:44px;font-size:var(--fs0);font-weight:500;color:var(--ink-2);text-decoration:none}
-.handle:hover{color:var(--ink)}
-.lang{display:flex;gap:4px}
-.lang button{min-height:44px;min-width:44px;padding:0 10px;border:0;border-bottom:2px solid transparent;background:none;font:600 var(--fs0)/1 var(--text);color:var(--ink-2);cursor:pointer}
-.lang button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--ink)}
-.hero{display:none}
-
-/* identity */
-.id{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;padding-top:8px}
-.id img{width:48px;height:48px;border-radius:var(--r);display:block;object-fit:cover}
-.id h1{font:600 var(--fs3)/1.02 var(--display);letter-spacing:-.02em;color:var(--ink)}
-.id .pos{margin-top:8px;font-weight:500}
-.id .place{margin-top:2px;color:var(--ink-2);font-size:var(--fs0)}
-.open{margin-top:18px;font-weight:600}
-[data-open-now]::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--ink-2);margin-right:9px;vertical-align:1px}
-[data-open-now][data-open="yes"]::before{background:var(--rose)}
-.tiny{font-size:var(--fs-1);color:var(--ink-2);margin-top:2px}
-
-/* acts */
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:10px 16px;border-radius:var(--r);border:1.5px solid var(--ink);background:transparent;color:var(--ink);font:600 var(--fs1)/1.2 var(--text);text-decoration:none;text-align:center;cursor:pointer;transition:transform .2s var(--ease),background-color .2s var(--ease)}
-.btn:hover{background:var(--blush-2)}
-.btn:active{transform:translateY(1px)}
-.btn-primary{min-height:56px;background:var(--rose);border-color:var(--rose);color:var(--paper-white)}
-.btn-primary:hover{background:#a52a52}
-.acts{display:grid;gap:10px;margin-top:18px}
-.acts .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-
-/* sections */
-section{margin-top:36px}
-h2{font:600 var(--fs2)/1.2 var(--display);letter-spacing:-.01em}
-.sub{color:var(--ink-2);font-size:var(--fs0);margin-top:4px}
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
-.nav{display:flex;gap:6px}
-.nav button{width:44px;height:44px;border-radius:var(--r);border:1.5px solid var(--ink);background:none;cursor:pointer;display:grid;place-items:center}
-.nav button:hover{background:var(--blush-2)}
-.nav svg{width:18px;height:18px;display:block}
-
-/* strip */
-.strip{display:flex;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;margin:14px -20px 0;padding:2px 20px 12px;scroll-padding:0 20px;scrollbar-width:thin;scrollbar-color:var(--ink-2) var(--line)}
-.strip::-webkit-scrollbar{height:6px}
-.strip::-webkit-scrollbar-track{background:var(--line);border-radius:var(--r)}
-.strip::-webkit-scrollbar-thumb{background:var(--ink-2);border-radius:var(--r)}
-.strip figure{flex:0 0 auto;width:var(--w);scroll-snap-align:start}
-.strip img{display:block;width:100%;height:auto;border-radius:var(--r);background:var(--blush-2)}
-.strip figcaption{font-size:var(--fs0);color:var(--ink-2);margin-top:8px;line-height:1.35}
-.prog{position:relative;height:3px;background:var(--line);border-radius:var(--r);margin-top:4px;overflow:hidden}
-.prog i{position:absolute;top:0;left:0;height:100%;width:30%;background:var(--ink);border-radius:var(--r)}
-
-/* services */
-.svc h3{font:600 var(--fs0)/1.2 var(--text);color:var(--ink-2);margin:22px 0 4px}
-.svc .row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:11px 0;border-top:1px solid var(--line)}
-.svc .name{font-weight:500}
-.svc .line{display:block;font-size:var(--fs0);color:var(--ink-2);font-weight:400;margin-top:2px}
-.svc .meta{flex:0 0 auto;max-width:42%;text-align:right;color:var(--ink-2);font-size:var(--fs0);font-variant-numeric:tabular-nums}
-.note{font-size:var(--fs0);color:var(--ink-2);margin-top:12px}
-.inline{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
-
-/* hours, address */
-.hrs{margin-top:12px}
-.hrow{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid var(--line);font-size:var(--fs1)}
-.hrow.today{font-weight:600}
-.hval{font-variant-numeric:tabular-nums;color:var(--ink-2)}
-.hrow.today .hval{color:var(--ink)}
-.addr{margin-top:16px}
-.addr strong{display:block;font-weight:600}
-.addr .btn{margin-top:12px}
-
-/* book */
-#book .chw{margin-top:10px}
-#book .ch{width:100%}
-.slot{display:none;font-size:var(--fs0);color:var(--ink-2);margin:8px 4px 0}
-.slot.is-open{display:block}
-#book .ch[aria-expanded="true"]{background:var(--blush-2)}
-
-/* about, reviews, share */
-.about p+p{margin-top:10px}
-.empty{padding:16px;border:1.5px dashed var(--line);border-radius:var(--r);color:var(--ink-2);font-size:var(--fs0);margin-top:12px}
-#share{margin-top:12px}
-
-/* footer */
-footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:var(--fs-1);color:var(--ink-2)}
-footer p+p{margin-top:8px}
-
-/* sticky bar */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:10px 20px calc(10px + env(safe-area-inset-bottom));background:var(--blush);border-top:1px solid var(--line);transition:transform .35s var(--ease)}
-.bar .btn{max-width:440px;margin:0 auto}
-.bar.is-hidden{transform:translateY(110%)}
-
-/* reveal */
-.reveal{transition:opacity .55s var(--ease),transform .55s var(--ease);transition-delay:calc(var(--i,0) * 70ms)}
+html{background:var(--paper);color:var(--ink);font:400 100%/1.55 "Instrument Sans",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+body{margin:0;font-size:var(--s3)}
+a{color:var(--espresso);text-underline-offset:.16em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--espresso);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-200vw;top:0;background:var(--ink);color:var(--paper);padding:.75rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;letter-spacing:-.01em;margin:0}
+h1{font-size:var(--s6);line-height:1.02;font-weight:400;max-width:17ch}
+h2{font-size:var(--s5);line-height:1.1;max-width:26ch}
+h3{font-size:var(--s4);line-height:1.2}
+p{margin:0 0 1em;max-width:62ch}
+em{font-family:"Newsreader",Georgia,serif;font-style:italic}
+code,kbd{font-family:inherit;font-size:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+header.top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.25rem var(--gutter);border-bottom:1px solid var(--rule);font-size:var(--s2);color:var(--ink-2)}
+header.top b{font-weight:600;color:var(--ink)}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap}
+header.top nav a{color:var(--ink-2);text-decoration:none;padding:.55rem 0}
+header.top nav a:hover{color:var(--ink);text-decoration:underline}
+.cover{padding:clamp(3rem,8vw,7rem) 0 clamp(2rem,5vw,4rem);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(2rem,5vw,5rem);align-items:end}
+.cover .lede{font-size:var(--s4);line-height:1.35;color:var(--ink-2);max-width:34ch;margin-top:1.5rem}
+.cover .date{font-size:var(--s2);color:var(--ink-2);margin-bottom:1.25rem}
+.cover figure{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.cover figure img{width:100%;height:auto;display:block}
+.cover figure img:first-child{grid-row:span 2}
+.cover figcaption{grid-column:1/-1;font-size:var(--s1);color:var(--ink-2)}
+.finding{border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);padding:1.75rem 0 1.25rem;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr);gap:2rem}
+.finding h2{font-size:var(--s4);font-style:italic;font-weight:400}
+.finding p{font-size:var(--s3)}
+section{padding:clamp(2.5rem,6vw,5rem) 0;border-bottom:1px solid var(--rule)}
+.num{font-family:"Newsreader",Georgia,serif;font-size:var(--s5);color:var(--honey);font-weight:400;line-height:1;display:block;margin-bottom:.6rem}
+.grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.7fr);gap:clamp(1.5rem,4vw,4rem)}
+.grid > *{min-width:0}
+.scroll{overflow-x:auto;max-width:100%}
+.scroll table{min-width:640px}
+.measured dl{min-width:0}
+.grid > aside{position:sticky;top:1.5rem;align-self:start}
+.grid > aside p{color:var(--ink-2);font-size:var(--s2)}
+dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:.45rem 1.5rem;margin:0 0 1.5rem;font-size:var(--s2)}
+dl.facts dt{color:var(--ink-2)}
+dl.facts dd{margin:0}
+.flag{color:var(--ink-2);font-size:var(--s1)}
+.tones{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 1.5rem}
+.tones span{display:grid;grid-template-rows:56px auto;width:72px;font-size:var(--s1);color:var(--ink-2)}
+.tones span::before{content:"";display:block;background:var(--sw)}
+.direction{padding:clamp(2rem,5vw,4rem) 0;border-top:1px solid var(--rule)}
+.direction:first-of-type{border-top:0}
+.direction header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:end;margin-bottom:1.25rem}
+.direction header .kind{font-size:var(--s2);color:var(--ink-2)}
+.direction header .open{font-size:var(--s2);white-space:nowrap;padding:.85rem 0;display:inline-block}
+.shots{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,1fr);gap:1rem;margin:1.25rem 0 1.75rem;align-items:start}
+.shots a{display:block;border:1px solid var(--rule);background:var(--paper-2);overflow:hidden}
+.shots img{display:block;width:100%;height:auto}
+.shots .phone{aspect-ratio:390/844;overflow:hidden}
+.shots .phone img{width:100%;height:auto}
+.four{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem 2.5rem;font-size:var(--s2)}
+.four h3{font-size:var(--s3);font-family:"Instrument Sans",system-ui,sans-serif;font-weight:600;margin-bottom:.25rem}
+.four p{max-width:none}
+.measured{margin-top:1.5rem;font-size:var(--s2);border-top:1px solid var(--rule)}
+.measured dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.75rem 1.25rem;margin:.75rem 0 0}
+.measured dt{color:var(--ink-2);font-size:var(--s1)}
+.measured dd{margin:0;font-variant-numeric:tabular-nums}
+.try{font-size:var(--s2);color:var(--ink-2);margin-top:1rem}
+.try kbd,aside kbd{border:1px solid var(--rule);padding:0 .35em;border-radius:2px;background:var(--paper-2);color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:var(--s2);margin:1.25rem 0}
+th,td{text-align:left;vertical-align:top;padding:.65rem .75rem .65rem 0;border-bottom:1px solid var(--rule)}
+th{font-weight:600;color:var(--ink-2);font-size:var(--s1)}
+thead th{border-bottom:2px solid var(--ink)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;padding-right:1.25rem}
+.slots th{width:12%}
+.moves ol{padding-left:1.25rem;margin:0}
+.moves li{margin-bottom:1.1rem;max-width:66ch}
+.moves li b{font-weight:600}
+.price{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;margin:1.5rem 0}
+.price > div{border-top:2px solid var(--rule);padding-top:1rem;font-size:var(--s2)}
+.price > div.rec{border-top-color:var(--ink)}
+.price .amt{font-family:"Newsreader",Georgia,serif;font-size:var(--s5);line-height:1;margin:.25rem 0 .75rem}
+.price ul{padding-left:1.1rem;margin:.5rem 0}
+.price li{margin:.25rem 0}
+.checklist{columns:2;column-gap:3rem;font-size:var(--s2);padding-left:1.2rem}
+.checklist li{break-inside:avoid;margin-bottom:.5rem}
+footer{padding:2.5rem var(--gutter) 4rem;font-size:var(--s1);color:var(--ink-2)}
+footer p{max-width:80ch}
+.reveal{opacity:1;transform:none}
 html.js:not(.ready) .reveal{opacity:0;transform:translateY(10px)}
-
-@media (min-width:900px){
-  .wrap{max-width:1040px;display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start;padding:0 32px 56px}
-  .top{grid-column:1 / -1;padding:18px 0 6px}
-  .hero{display:block;position:sticky;top:28px;justify-self:end}
-  .hero img{display:block;aspect-ratio:3 / 4;width:min(100%, calc(min(86vh, 760px) * 0.75));height:auto;border-radius:var(--r)}
-  .card{background:var(--blush-2);border-radius:var(--r);padding:28px 28px 34px}
-  .strip{margin:14px -28px 0;padding:2px 28px 12px;scroll-padding:0 28px;scrollbar-color:var(--ink-2) var(--blush)}
-  .strip::-webkit-scrollbar-track{background:var(--blush)}
-  .strip img{background:var(--blush)}
-  .btn:hover{background:var(--blush)}
-  .nav button:hover{background:var(--blush)}
-  #book .ch[aria-expanded="true"]{background:var(--blush)}
-  .prog{background:var(--blush)}
-  .empty{border-color:var(--ink-2)}
-  .bar{display:none}
+html.js.ready .reveal{transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+html.js.ready .reveal:nth-child(2){transition-delay:.08s}
+@media (prefers-reduced-motion:reduce){.reveal{transition:none!important;transform:none!important;opacity:1!important}}
+@media (max-width:900px){
+  .cover,.finding,.grid{grid-template-columns:1fr}
+  .grid > aside{position:static}
+  .four{grid-template-columns:1fr}
+  .shots{grid-template-columns:1fr}
+  .shots .phone{max-width:260px}
+  .price{grid-template-columns:1fr}
+  .checklist{columns:1}
+  header.top nav{display:none}
 }
-
-@media (prefers-reduced-motion: reduce){
-  .reveal,.bar,.btn{transition:none !important}
-  html.js:not(.ready) .reveal{opacity:1;transform:none}
-  .strip{scroll-behavior:auto}
-}
-
 @media print{
-  *,*::before,*::after{transition:none !important;animation:none !important}
-  html,body{background:#fff;color:#000}
-  .wrap{display:block;max-width:none;padding:0}
-  .top,.bar,.nav,.prog,.skip,.hero,.no-print{display:none !important}
-  .card{background:none;padding:0;border-radius:0}
-  *{color:#000 !important}
-  .reveal{opacity:1 !important;transform:none !important}
-  .btn{display:inline-block;min-height:0;padding:4px 10px;border:1px solid #000;background:none !important}
-  .btn-primary,.btn-primary:hover{background:none !important;background-color:transparent !important;color:#000 !important}
-  .acts,.acts .two{display:block}
-  .acts .btn{margin:0 8px 8px 0}
-  .strip{display:flex;flex-wrap:wrap;overflow:visible;margin:12px 0 0;padding:0;gap:10px}
-  .strip figure{width:auto}
-  .strip img{height:130px;width:auto}
-  .strip figcaption{max-width:130px}
-  .slot{display:block !important}
-  #book .chw{margin-top:8px}
-  section{margin-top:18px}
-  .svc .row,.hrow,.chw{break-inside:avoid}
-  [data-open-now]::before{background:#000}
-  footer{margin-top:18px;padding-top:10px;break-inside:avoid}
-  .svc .row,.hrow{border-top-color:#000}
+  html{background:#fff;color:#000;font-size:100%}
+  header.top nav,.skip,.open,.try{display:none}
+  section,.direction{break-inside:auto;padding:1rem 0}
+  .direction{break-before:page}
+  .shots{grid-template-columns:1fr 1fr}
+  a{color:#000;text-decoration:none}
+  .num{color:#000}
+  .grid > aside{position:static}
+  .measured dd,.measured dt,table{font-size:var(--s1)}
 }
 </style>
 </head>
 <body>
-<a class="skip" href="#main" data-t="skip">Skip to content</a>
+<a class="skip" href="#main">Skip to the proposal</a>
+<header class="top">
+  <div><b>Page Studio</b> · Design proposal for Fernanda Ramirez</div>
+  <nav aria-label="Sections">
+    <a href="#saw">What we saw</a><a href="#directions">Four directions</a><a href="#side">Side by side</a><a href="#rec">Recommendation</a><a href="#clients">Getting clients</a><a href="#price">Price and rollout</a><a href="#confirm">What we need</a>
+  </nav>
+</header>
 
-<div class="wrap">
-  <header class="top">
-    <a class="handle" href="https://www.instagram.com/fernanda_hairbeuty/" rel="noopener">@fernanda_hairbeuty</a>
-    <nav class="lang" aria-label="Language">
-      <button type="button" data-lang-toggle="en" aria-pressed="true" lang="en">English</button>
-      <button type="button" data-lang-toggle="es" aria-pressed="false" lang="es">Español</button>
-    </nav>
-  </header>
+<main id="main" class="wrap">
+  <div class="cover">
+    <div>
+      <p class="date reveal">20 November 2026 · Richmond, California · English and Spanish</p>
+      <h1 class="reveal">Fernanda, your work already sells itself. Let's give it a front door.</h1>
+      <p class="lede reveal">Four directions for a bilingual page that takes a woman who just saw your balayage and books her a consultation, from her phone, in under a minute.</p>
+    </div>
+    <figure class="reveal">
+      <img src="img/work-04.jpg" width="480" height="640" alt="Bright beige blonde balayage with a soft root, by Fernanda">
+      <img src="img/work-02.jpg" width="480" height="640" alt="Caramel and honey balayage, long loose waves, by Fernanda">
+      <img src="img/work-12.jpg" width="360" height="640" alt="Long bob, cut and colour, by Fernanda">
+      <figcaption>Your own posts, as Instagram serves them at 640px. The finished site will want your originals.</figcaption>
+    </figure>
+  </div>
 
-  <figure class="hero reveal" style="--i:1">
-    <img src="img/work-04.jpg" width="480" height="640" alt="Bright beige blonde balayage with a soft root" data-t="hero_alt" data-t-attr="alt">
-  </figure>
+  <div class="finding" id="para-fernanda">
+    <h2>Para Fernanda</h2>
+    <div>
+      <p>Hola Fernanda. Aquí hay cuatro ideas para tu página, hechas con tus propias fotos. Ábrelas en tu teléfono, toca <b>ES</b> para verlas en español, y responde al mensaje donde recibiste este enlace con la que te hizo sonreír primero, y lo que cambiarías. Nada de esto está publicado todavía; es solo para que lo veas.</p>
+      <p>Hi Fernanda. Four ideas for your page, made with your own photos. Open them on your phone, tap <b>ES</b> for Spanish, and reply to the text this link came in with the one that made you smile first and what you would change. None of this is public yet; it is here for you to see.</p>
+    </div>
+  </div>
 
-  <main id="main" class="card" tabindex="-1">
-    <div class="id reveal" style="--i:0">
-      <img src="img/fernanda.jpg" width="150" height="150" alt="">
+  <div class="finding">
+    <h2>One thing we found today</h2>
+    <div>
+      <p>Your Instagram highlight sends clients to the Booksy app. On 20 November 2026 your Booksy page showed Booksy's "business deleted" notice. A client who taps through right now meets a dead end, and there is no way for you to see how many did.</p>
+      <p>A page of your own fixes that in one move. It holds your work, your services in both languages, your hours, and three ways to book. If you ever change booking apps again, the page stays and only one link behind it changes.</p>
+    </div>
+  </div>
+
+  <section id="saw">
+    <div class="grid">
+      <aside>
+        <span class="num">01</span>
+        <h2>What we saw</h2>
+        <p>Read from your public pages on 20 November 2026. Lines marked "confirm" are published somewhere and need your yes.</p>
+      </aside>
       <div>
-        <h1 data-from="person.name">Fernanda Ramirez</h1>
-        <p class="pos" data-from="person.position_en">Sunkissed and corrective blonde specialist</p>
-        <p class="place"><span data-t="at_salon">at Maribel's Beauty Salon</span>, Richmond, CA</p>
+        <dl class="facts">
+          <dt>Name</dt><dd>Fernanda Ramirez, @fernanda_hairbeuty (and @fernika_colorexpert before)</dd>
+          <dt>Position</dt><dd>Sunkissed and corrective blonde specialist; precision cuts and colour</dd>
+          <dt>Salon</dt><dd>Maribel's Beauty Salon, 12669 San Pablo Ave, Richmond, CA 94805 <span class="flag">confirm; a listing also shows 232 23rd St</span></dd>
+          <dt>Hours</dt><dd>Tuesday to Friday 10 am to 7 pm, Saturday 10 am to 6 pm, closed Sunday and Monday <span class="flag">the salon's hours; confirm yours</span></dd>
+          <dt>Languages</dt><dd>English and Spanish, in your posts and with your clients</dd>
+          <dt>Highlights</dt><dd>Booksy app · Bob cut! · Balayage! · Destacada · Book NOW. · Keratina!!! · Certificado · Face framing · Copper!</dd>
+          <dt>Instagram</dt><dd>479 posts, 447 followers</dd>
+          <dt>Published prices</dt><dd>The salon's Square list: women's cut $60 for 45 min; single-process colour from $120 for 1 h 30. Nothing published under your name for balayage, corrective colour or keratin.</dd>
+          <dt>Reviews</dt><dd>None found under your name. The pages leave an empty, labelled space for them.</dd>
+        </dl>
+        <h3>Your colours</h3>
+        <p>The palettes in the four directions come from your own photographs. Measured from the hair in your posts:</p>
+        <div class="tones" aria-label="Tones measured from the photographs">
+          <span style="--sw:#b4966c">honey</span><span style="--sw:#8d765e">caramel</span><span style="--sw:#e6e5d5">champagne</span><span style="--sw:#3d2e21">espresso</span><span style="--sw:#58272d">burgundy</span><span style="--sw:#101818">black</span>
+        </div>
+        <h3>The reader and the job</h3>
+        <p>She has just seen one of your reels. She is on her phone, often at night, often in Spanish, and she wants two things: proof you can do this on hair like hers, and the quickest way to get in your chair. Every direction below answers those two in a different order and a different voice. All four share one set of facts, one language toggle, one open-now line and one booking block, so they differ in design and never in behaviour.</p>
       </div>
     </div>
+  </section>
 
-    <p class="open reveal" style="--i:1" data-open-now></p>
-    <p class="tiny reveal" style="--i:1" data-t="open_label">Salon hours, to confirm with Fernanda</p>
+  <section id="directions">
+    <div class="grid">
+      <aside>
+        <span class="num">02</span>
+        <h2>Four directions</h2>
+        <p>Each one commits to a different idea of the reader. Open them from disk; press <kbd>E</kbd> for Spanish and <kbd>B</kbd> to jump to booking on any of them.</p>
+        <p>Screenshots were taken on this machine at 1440 and 390 px wide after the pages passed their checks.</p>
+      </aside>
+      <div>
 
-    <div class="acts reveal" id="acts" style="--i:2">
-      <a class="btn btn-primary" href="#book" data-t="book">Book with Fernanda</a>
-      <div class="two">
-        <a class="btn" href="#book" data-t="text">Text Fernanda</a>
-        <a class="btn" href="https://maps.apple.com/?q=12669+San+Pablo+Ave+Richmond+CA+94805" rel="noopener" data-t="directions">Directions</a>
+        <article class="direction" id="d1">
+          <header>
+            <div><h3>1 · The Lookbook</h3><div class="kind">Her work as a printed colour lookbook, plate by plate</div></div>
+            <a class="open" href="d1-lookbook.html">Open the Lookbook</a>
+          </header>
+          <div class="shots">
+            <a href="d1-lookbook.html"><img src="shots/d1-1440-fold.png" alt="The Lookbook at 1440 px wide, first screen" width="1440" height="900"></a>
+            <a class="phone" href="d1-lookbook.html"><img src="shots/d1-390-fold.png" alt="The Lookbook on a phone, first screen" width="780" height="1688"></a>
+          </div>
+          <div class="four">
+            <div><h3>Why</h3><p>The document this reader already trusts is your grid and your before-and-afters. So the page is drawn as a lookbook: a plate per technique, your photographs at their own shapes, two lines of plain copy, and a Book act on each plate.</p></div>
+            <div><h3>Draws on</h3><p>Vogue and Allure beauty lookbooks, Glossier's product-photo grids, Hershesons in London, Bumble and bumble's editorial pages, and Instagram's own 4:5 crop as the plate.</p></div>
+            <div><h3>Does better</h3><p>Proof and authority. The strongest "she can do my hair" of the four, and the one that reads most like a studio with a waiting list.</p></div>
+            <div><h3>Costs</h3><p>Long on a phone, slower to the Book act than the Pocket or the Stage, and it asks the most of your photography.</p></div>
+          </div>
+          <div class="measured"><dl>
+            <dt>Page height, 1440 / 390</dt><dd><span data-m="d1.h1440">not measured yet</span> / <span data-m="d1.h390"></span> px</dd>
+            <dt>First Book act from the top, 1440 / 390</dt><dd><span data-m="d1.book1440"></span> / <span data-m="d1.book390"></span> px</dd>
+            <dt>Book on the first phone screen</dt><dd data-m="d1.bookInFold390"></dd>
+            <dt>Photos on the first screen, 1440</dt><dd data-m="d1.photosInFold1440"></dd>
+            <dt>Checks</dt><dd data-m="d1.gate"></dd>
+          </dl></div>
+          <p class="try">Try: scroll the plates, <kbd>E</kbd> for Spanish, <kbd>B</kbd> to book, print preview for the plate sheet.</p>
+        </article>
+
+        <article class="direction" id="d2">
+          <header>
+            <div><h3>2 · La Carta</h3><div class="kind">A calm, bound, bilingual service menu</div></div>
+            <a class="open" href="d2-carta.html">Open La Carta</a>
+          </header>
+          <div class="shots">
+            <a href="d2-carta.html"><img src="shots/d2-1440-fold.png" alt="La Carta at 1440 px wide, first screen" width="1440" height="900"></a>
+            <a class="phone" href="d2-carta.html"><img src="shots/d2-390-fold.png" alt="La Carta on a phone, first screen" width="780" height="1688"></a>
+          </div>
+          <div class="four">
+            <div><h3>Why</h3><p>The practical client, often Spanish-first, wants four answers in one glance: what, how long, how much, and when. The page is set like a bound carta with ruled rows and dot leaders, both languages on each line, and one act.</p></div>
+            <div><h3>Draws on</h3><p>A bound restaurant carta, Aesop's ruled product lists, the restraint of Hermès and Apple in a table, your salon's own Square list, and a hotel spa menu.</p></div>
+            <div><h3>Does better</h3><p>Calm, warmth and clarity. The most comfortable page for a Spanish-first reader and the best one on paper: it prints as a single clean menu for the mirror.</p></div>
+            <div><h3>Costs</h3><p>Proof is played down; it carries the fewest photographs and can read as plain beside the Lookbook.</p></div>
+          </div>
+          <div class="measured"><dl>
+            <dt>Page height, 1440 / 390</dt><dd><span data-m="d2.h1440">not measured yet</span> / <span data-m="d2.h390"></span> px</dd>
+            <dt>First Book act from the top, 1440 / 390</dt><dd><span data-m="d2.book1440"></span> / <span data-m="d2.book390"></span> px</dd>
+            <dt>Book on the first phone screen</dt><dd data-m="d2.bookInFold390"></dd>
+            <dt>Printed pages</dt><dd data-m="d2.printPages"></dd>
+            <dt>Checks</dt><dd data-m="d2.gate"></dd>
+          </dl></div>
+          <p class="try">Try: <kbd>E</kbd> to see the rows swap language order, then print preview.</p>
+        </article>
+
+        <article class="direction" id="d3">
+          <header>
+            <div><h3>3 · Before / After</h3><div class="kind">One transformation at a time, on a dark stage</div></div>
+            <a class="open" href="d3-before-after.html">Open Before / After</a>
+          </header>
+          <div class="shots">
+            <a href="d3-before-after.html"><img src="shots/d3-1440-fold.png" alt="Before / After at 1440 px wide, first screen" width="1440" height="900"></a>
+            <a class="phone" href="d3-before-after.html"><img src="shots/d3-390-fold.png" alt="Before / After on a phone, first screen" width="780" height="1688"></a>
+          </div>
+          <div class="four">
+            <div><h3>Why</h3><p>The sceptic with brassy, banded or box-dyed hair decides from one convincing result. The page gives her exactly that: a real before-and-after of one client under a draggable divider, then one transformation per screen with the technique in large type and the act one key away.</p></div>
+            <div><h3>Draws on</h3><p>Apple product pages, with one claim per screen and type as large as the object; Olaplex before-and-afters; a photographer's one-image-at-a-time portfolio; the way a colourist talks in a consult.</p></div>
+            <div><h3>Does better</h3><p>Fastest to decide and the most memorable. The one people send to a friend with "look at this".</p></div>
+            <div><h3>Costs</h3><p>Hides the breadth of what you do, lives on a dark page, and depends on photographs taken from the same angle before and after.</p></div>
+          </div>
+          <div class="measured"><dl>
+            <dt>Page height, 1440 / 390</dt><dd><span data-m="d3.h1440">not measured yet</span> / <span data-m="d3.h390"></span> px</dd>
+            <dt>First Book act from the top, 1440 / 390</dt><dd><span data-m="d3.book1440"></span> / <span data-m="d3.book390"></span> px</dd>
+            <dt>Book on the first phone screen</dt><dd data-m="d3.bookInFold390"></dd>
+            <dt>Photos on the first screen, 1440</dt><dd data-m="d3.photosInFold1440"></dd>
+            <dt>Checks</dt><dd data-m="d3.gate"></dd>
+          </dl></div>
+          <p class="try">Try: drag the divider or use the arrow keys on it, <kbd>J</kbd> and <kbd>K</kbd> to move between transformations, <kbd>B</kbd> to book.</p>
+        </article>
+
+        <article class="direction" id="d4">
+          <header>
+            <div><h3>4 · Pocket</h3><div class="kind">A card you keep on your phone: book, text, directions</div></div>
+            <a class="open" href="d4-pocket.html">Open Pocket</a>
+          </header>
+          <div class="shots">
+            <a href="d4-pocket.html"><img src="shots/d4-1440-fold.png" alt="Pocket at 1440 px wide, first screen" width="1440" height="900"></a>
+            <a class="phone" href="d4-pocket.html"><img src="shots/d4-390-fold.png" alt="Pocket on a phone, first screen" width="780" height="1688"></a>
+          </div>
+          <div class="four">
+            <div><h3>Why</h3><p>The referred friend got the link in a group chat and is holding her phone with one thumb. The page is built for that hand: open-now, three big acts on the first screen, a swipe strip of your work, services with prices where you publish them, share and Spanish in one tap.</p></div>
+            <div><h3>Draws on</h3><p>Apple Wallet passes, Booksy's own booking flow, an iOS contact card, a printed business card, and the "link in bio" done as a real page.</p></div>
+            <div><h3>Does better</h3><p>The best phone experience of the four and the best "send this to a friend". Also the cheapest to run.</p></div>
+            <div><h3>Costs</h3><p>Loud, small on a desktop, and thinner on editorial authority than the Lookbook.</p></div>
+          </div>
+          <div class="measured"><dl>
+            <dt>Page height, 1440 / 390</dt><dd><span data-m="d4.h1440">not measured yet</span> / <span data-m="d4.h390"></span> px</dd>
+            <dt>First Book act from the top, 1440 / 390</dt><dd><span data-m="d4.book1440"></span> / <span data-m="d4.book390"></span> px</dd>
+            <dt>Book on the first phone screen</dt><dd data-m="d4.bookInFold390"></dd>
+            <dt>Targets under 44 px on the phone</dt><dd data-m="d4.t44"></dd>
+            <dt>Checks</dt><dd data-m="d4.gate"></dd>
+          </dl></div>
+          <p class="try">Try: narrow the window to a phone, tap Share, swipe the strip, <kbd>E</kbd> for Spanish.</p>
+        </article>
+
       </div>
     </div>
+  </section>
 
-    <section class="reveal" style="--i:3" aria-labelledby="h-work">
-      <div class="head">
-        <div>
-          <h2 id="h-work" data-t="work">Recent work</h2>
-          <p class="sub" data-t="work_hint">Swipe, or use the arrows.</p>
-        </div>
-        <div class="nav">
-          <button type="button" data-scroll="prev" data-t="prev" data-t-attr="aria-label" aria-label="Previous photos"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 6 10l6 6"/></svg></button>
-          <button type="button" data-scroll="next" data-t="next" data-t-attr="aria-label" aria-label="Next photos"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 4 6 6-6 6"/></svg></button>
-        </div>
+  <section id="side">
+    <div class="grid">
+      <aside>
+        <span class="num">03</span>
+        <h2>Side by side</h2>
+        <p>Four directions should win on four different axes. If two win on the same one, one of them is a variation.</p>
+      </aside>
+      <div>
+        <div class="scroll"><table>
+          <thead><tr><th>Axis</th><th>Lookbook</th><th>La Carta</th><th>Before / After</th><th>Pocket</th></tr></thead>
+          <tbody>
+            <tr><td>Speed to the Book act</td><td>Slow, on the plate</td><td>Medium, top card</td><td>Fast, one key</td><td>Fastest, first screen</td></tr>
+            <tr><td>Trust in the proof</td><td>Strongest</td><td>Light</td><td>Strong, one pair</td><td>Medium, a strip</td></tr>
+            <tr><td>Calm and Spanish-first comfort</td><td>Warm</td><td>Calmest</td><td>Dramatic</td><td>Friendly</td></tr>
+            <tr><td>In the hand</td><td>Long</td><td>Good</td><td>Good</td><td>Best</td></tr>
+            <tr><td>On paper</td><td>Plate sheet</td><td>One clean carta</td><td>Light sheet</td><td>Card</td></tr>
+            <tr><td>Desktop presence</td><td>Studio</td><td>Boutique</td><td>Gallery</td><td>Card beside a photo</td></tr>
+          </tbody>
+        </table></div>
+        <h3>Measured</h3>
+        <div class="scroll"><table>
+          <thead><tr><th>Direction</th><th class="n">Height 1440</th><th class="n">Height 390</th><th class="n">Book at 1440</th><th class="n">Book at 390</th><th>On first phone screen</th><th class="n">Contrast fails</th><th class="n">Text under 13 px</th><th class="n">Printed pages</th><th>Spanish fits at 390</th></tr></thead>
+          <tbody>
+            <tr><td>Lookbook</td><td class="n" data-m="d1.h1440"></td><td class="n" data-m="d1.h390"></td><td class="n" data-m="d1.book1440"></td><td class="n" data-m="d1.book390"></td><td data-m="d1.bookInFold390"></td><td class="n" data-m="d1.contrast"></td><td class="n" data-m="d1.small"></td><td class="n" data-m="d1.printPages"></td><td data-m="d1.esFits"></td></tr>
+            <tr><td>La Carta</td><td class="n" data-m="d2.h1440"></td><td class="n" data-m="d2.h390"></td><td class="n" data-m="d2.book1440"></td><td class="n" data-m="d2.book390"></td><td data-m="d2.bookInFold390"></td><td class="n" data-m="d2.contrast"></td><td class="n" data-m="d2.small"></td><td class="n" data-m="d2.printPages"></td><td data-m="d2.esFits"></td></tr>
+            <tr><td>Before / After</td><td class="n" data-m="d3.h1440"></td><td class="n" data-m="d3.h390"></td><td class="n" data-m="d3.book1440"></td><td class="n" data-m="d3.book390"></td><td data-m="d3.bookInFold390"></td><td class="n" data-m="d3.contrast"></td><td class="n" data-m="d3.small"></td><td class="n" data-m="d3.printPages"></td><td data-m="d3.esFits"></td></tr>
+            <tr><td>Pocket</td><td class="n" data-m="d4.h1440"></td><td class="n" data-m="d4.h390"></td><td class="n" data-m="d4.book1440"></td><td class="n" data-m="d4.book390"></td><td data-m="d4.bookInFold390"></td><td class="n" data-m="d4.contrast"></td><td class="n" data-m="d4.small"></td><td class="n" data-m="d4.printPages"></td><td data-m="d4.esFits"></td></tr>
+            <tr id="d5row" hidden><td>The blend</td><td class="n" data-m="d5.h1440"></td><td class="n" data-m="d5.h390"></td><td class="n" data-m="d5.book1440"></td><td class="n" data-m="d5.book390"></td><td data-m="d5.bookInFold390"></td><td class="n" data-m="d5.contrast"></td><td class="n" data-m="d5.small"></td><td class="n" data-m="d5.printPages"></td><td data-m="d5.esFits"></td></tr>
+          </tbody>
+        </table></div>
+        <p class="flag">Measured on this machine with the pages opened from disk: a headless Chromium at 1440×900 and 390×844, the contrast of every text node against its real background (WCAG AA), text sizes, tap targets and a Letter-size print. Numbers filled from <code>index-data.js</code>, written by <code>qa/measure.py</code> on <span data-m="measured"></span>.</p>
       </div>
-      <div class="strip" id="strip" tabindex="0" aria-label="Photos of recent work" data-t="strip_label" data-t-attr="aria-label"></div>
-      <div class="prog" aria-hidden="true"><i id="prog-thumb"></i></div>
-    </section>
+    </div>
+  </section>
 
-    <section class="svc reveal" style="--i:4" aria-labelledby="h-svc">
-      <h2 id="h-svc" data-t="services">Services</h2>
-      <div id="services"></div>
-      <p class="note" data-from="services.note_en"></p>
-      <p class="note"><span data-t="new_here">New here? Start with a consultation.</span> <a class="inline" href="#book" data-t="book_consult">Book a consultation</a></p>
-    </section>
-
-    <section class="reveal" style="--i:5" aria-labelledby="h-hours">
-      <h2 id="h-hours" data-t="hours">Hours</h2>
-      <p class="sub" data-t="open_label">Salon hours, to confirm with Fernanda</p>
-      <div class="hrs" data-hours></div>
-      <div class="addr">
-        <strong data-from="salon.name">Maribel's Beauty Salon</strong>
-        <span data-from="salon.address_line">12669 San Pablo Ave, Richmond, CA 94805</span>
-        <a class="btn" href="https://maps.apple.com/?q=12669+San+Pablo+Ave+Richmond+CA+94805" rel="noopener" data-t="directions">Directions</a>
-        <p class="note"><a class="inline" href="https://www.google.com/maps/search/?api=1&query=12669+San+Pablo+Ave+Richmond+CA+94805" rel="noopener" data-t="gmaps">Open in Google Maps</a></p>
+  <section id="rec">
+    <div class="grid">
+      <aside>
+        <span class="num">04</span>
+        <h2>Recommendation</h2>
+        <p>A blend is a decision when each part comes from the direction that does it best, and when we can say what the directions alone get wrong.</p>
+      </aside>
+      <div>
+        <p>Build the Lookbook's frame on the desktop with the Pocket's order on the phone, La Carta's bilingual service rows and print, the Stage's real before-and-after as the first proof, and the Lookbook's warm paper drawn from your own blondes.</p>
+        <div class="scroll"><table class="slots">
+          <thead><tr><th>Slot</th><th>From</th><th>What it decides</th></tr></thead>
+          <tbody>
+            <tr><td>Frame</td><td>Lookbook, with Pocket on the phone</td><td>Plates by technique on a wide screen; on a phone, name, open-now and the Book act first, then the plates, with a sticky Book bar.</td></tr>
+            <tr><td>Language</td><td>La Carta</td><td>Services as ruled bilingual rows with duration and price or "quoted at consultation"; sentence case; state said in words.</td></tr>
+            <tr><td>Paper</td><td>La Carta</td><td>One printed sheet for the mirror: services, hours, address, three ways to book, a QR to the page.</td></tr>
+            <tr><td>Habit</td><td>Before / After</td><td>A real before-and-after pair under a divider at the top of the colour plate, and the habit behind it: one pair from the same angle at the end of each colour appointment.</td></tr>
+            <tr><td>Palette</td><td>Lookbook</td><td>Warm paper, espresso ink, honey for the act only; a dark paper later if you want one for reels.</td></tr>
+          </tbody>
+        </table></div>
+        <h3>Why a combination</h3>
+        <p>The Lookbook alone is slow to the Book act on a phone. La Carta alone plays down the proof that brings people in. The Stage alone hides how much you do and asks a lot of every photograph. The Pocket alone is small on a desktop and light on authority.</p>
+        <h3>Two alternates, each one build away</h3>
+        <table>
+          <tbody>
+            <tr><td><b>Fastest</b></td><td>Pocket frame, the Stage's divider as the single proof, La Carta's print. For a practice that runs on texts and referrals.</td></tr>
+            <tr><td><b>Strongest proof</b></td><td>Lookbook frame as built, the Stage's divider on the first plate, no sticky bar. For a practice growing its colour-correction work and its prices.</td></tr>
+          </tbody>
+        </table>
+        <p id="blendnote" class="flag">The blend is proposed here as a slot table. When it is built it appears as a fifth page beside the four, measured in the same table above.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="book" class="reveal" style="--i:6" aria-labelledby="h-book">
-      <h2 id="h-book" data-t="book_h">Three ways to book</h2>
-      <p class="sub" data-t="book_sub">Pick whichever is easiest for you.</p>
-      <div id="channels"></div>
-    </section>
+  <section id="clients">
+    <div class="grid">
+      <aside>
+        <span class="num">05</span>
+        <h2>Getting clients</h2>
+        <p>A page on its own books nobody. These are the moves around it, each with the number that tells you it is working.</p>
+      </aside>
+      <div class="moves">
+        <ol>
+          <li><b>One front door.</b> The page becomes the link in your bio and in your "Book NOW." highlight. Whether you book on Booksy, Square or by text, the client lands in the same place and you can count her. <em>Number:</em> taps on Book per hundred visits.</li>
+          <li><b>Your Google Business Profile.</b> Claimed under your name as a stylist at the salon, or the salon's profile updated with you on it: photos, hours, the booking link, a Spanish description. Searches for "balayage Richmond CA" and "corrección de color Richmond" land on a profile and a page that answer in the searcher's language. <em>Number:</em> calls, direction requests and site taps per month, read in the profile's own report.</li>
+          <li><b>Consultation first for colour.</b> The page's main act for balayage and corrective work is a consultation. You see the hair before you quote, she hears the plan before she commits, and the no-show rate on long colour appointments comes down. <em>Number:</em> consultations booked per week, and how many become colour appointments.</li>
+          <li><b>The before-and-after habit.</b> Thirty seconds at the end of each colour appointment: the same angle, the same light, before and after. The page has a slot per technique waiting for them. <em>Number:</em> pairs added per month.</li>
+          <li><b>Reviews, asked for once.</b> A text the evening after the appointment with one link. Reviews show on the page as soon as they exist; until then the space says so. <em>Number:</em> reviews under your name, with the first ten as the goal.</li>
+          <li><b>A card for the mirror and the chair.</b> La Carta prints as a menu; the Pocket prints as a card with a QR code. The QR in this proposal opens your Instagram today and will open the page at launch. <em>Number:</em> visits that arrive by the QR link.</li>
+          <li><b>Rebooking.</b> Blonde grows out in eight to ten weeks. The booking app's reminder, and the page's Text link in your signature, make the next appointment one tap. <em>Number:</em> share of clients who rebook within ten weeks, read in Booksy or Square.</li>
+          <li><b>Instagram stays the feed; the page is the window.</b> Pin the page link, keep posting, and let the page carry what a feed cannot: prices, hours, both languages, and a Book act that never moves.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
 
-    <section class="about reveal" style="--i:7" aria-labelledby="h-about">
-      <h2 id="h-about" data-t="about">About Fernanda</h2>
-      <p class="note" data-t="about_1">Fernanda works in English and Spanish at Maribel's Beauty Salon in Richmond. Her focus is sunkissed blonde and colour correction, with precision cuts to match.</p>
-      <p class="note" data-t="about_2">Certified colourist; certificate details to confirm.</p>
-      <p class="note"><a class="inline" href="https://www.instagram.com/fernanda_hairbeuty/" rel="noopener" data-t="insta">See more on Instagram</a></p>
-    </section>
+  <section id="price">
+    <div class="grid">
+      <aside>
+        <span class="num">06</span>
+        <h2>Price, rollout and the numbers</h2>
+        <p>Fixed prices from Page Studio's list. Each phase ends when its number is met, and we say which figures are assumptions.</p>
+      </aside>
+      <div>
+        <div class="price">
+          <div>
+            <div class="flag">Pocket page</div>
+            <div class="amt">$750</div>
+            <p>The Pocket direction as built, one page in two languages, booking links, the printable card, and a Google Business Profile checklist you follow yourself.</p>
+            <ul><li>Live in one week after your facts arrive</li><li>Hosting at no monthly cost</li><li>Studio time assumed: 6 to 8 hours</li></ul>
+          </div>
+          <div class="rec">
+            <div class="flag">Landing page (recommended)</div>
+            <div class="amt">$3,500</div>
+            <p>The blend above, built on the shared core: bilingual, your booking link wired in, the before-and-after divider, the printed menu and card with QR, the Google Business Profile set up with you, a photo guide for the habit, and thirty days of changes after launch.</p>
+            <ul><li>Live in three weeks after your facts arrive</li><li>Domain about $15 a year; hosting at no monthly cost</li><li>Studio time assumed: 24 to 32 hours</li></ul>
+          </div>
+          <div>
+            <div class="flag">Site</div>
+            <div class="amt">$7,500</div>
+            <p>The landing page plus a page per technique in each language, a reviews feed, a seasonal photo refresh for a year, and quarterly reading of the numbers together.</p>
+            <ul><li>Live in six weeks</li><li>Studio time assumed: 55 to 70 hours</li></ul>
+          </div>
+        </div>
+        <h3>Rollout</h3>
+        <table>
+          <thead><tr><th>Week</th><th>What happens</th><th>Done when</th></tr></thead>
+          <tbody>
+            <tr><td>1 · Confirm</td><td>You answer the list in section 07; we collect originals, choose the domain and settle the booking link.</td><td>Every line in the list has an answer and the photos are in hand.</td></tr>
+            <tr><td>2 · Build</td><td>The chosen direction is built on the core already written for these four; you read both languages on your own phone.</td><td>The checks pass, and you have tapped through both languages without a question.</td></tr>
+            <tr><td>3 · Launch</td><td>Domain, hosting, Google Business Profile, the Instagram link swap, the card printed.</td><td>The live address passes the same checks; the profile shows the link; the highlight points to the page.</td></tr>
+            <tr><td>Days 30, 60, 90</td><td>We read the numbers below together and change one thing at a time.</td><td>Each number has a value and a direction.</td></tr>
+          </tbody>
+        </table>
+        <h3>The numbers</h3>
+        <div class="scroll"><table>
+          <thead><tr><th>Metric</th><th>Measured today</th><th>Goal</th><th>Where it is read</th></tr></thead>
+          <tbody>
+            <tr><td>Book act on the first phone screen</td><td data-m="summary.foldBook">not measured yet</td><td>Yes, on the chosen direction</td><td>qa/measure.py on the page</td></tr>
+            <tr><td>Taps on Book per hundred visits</td><td>None: there is no page yet</td><td>12 or more <span class="flag">(assumed)</span></td><td>Hosting analytics, no cookies</td></tr>
+            <tr><td>Consultations booked from the page per week</td><td>0</td><td>Your choice at week 1</td><td>Booksy or Square, with the page as source</td></tr>
+            <tr><td>Google Business Profile actions per month</td><td>Unknown: profile not claimed under your name</td><td>A baseline after month one</td><td>The profile's report</td></tr>
+            <tr><td>Reviews under your name</td><td>0 found</td><td>10 in the first ninety days <span class="flag">(assumed)</span></td><td>Google and Booksy</td></tr>
+            <tr><td>Before-and-after pairs on the page</td><td>1 real pair in your posts</td><td>One per technique by launch</td><td>The page</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="reveal no-print" style="--i:8" aria-labelledby="h-rev">
-      <h2 id="h-rev" data-t="reviews">Reviews</h2>
-      <p class="empty" data-t="reviews_empty">Reviews from Booksy and Google will appear here once they are connected.</p>
-    </section>
+  <section id="confirm">
+    <div class="grid">
+      <aside>
+        <span class="num">07</span>
+        <h2>What we need from you</h2>
+        <p>Short answers, by text or voice note, in either language.</p>
+      </aside>
+      <div>
+        <ol class="checklist">
+          <li>Is 12669 San Pablo Ave the right address, and do you also take clients at 23rd St?</li>
+          <li>Your own days and hours, if they differ from the salon's.</li>
+          <li>Where you want bookings to go: Booksy restored, the salon's Square, or a new link.</li>
+          <li>The number for the Text link.</li>
+          <li>Which prices to show, and which to keep as "quoted at consultation".</li>
+          <li>What the "Certificado" highlight certifies, so the page can name it.</li>
+          <li>The full line of your bio after "precision cuts &amp; co…".</li>
+          <li>Your original photos, straight from your phone, and a few of you at work.</li>
+          <li>A domain name you like. On 20 November 2026 none of fernandahair.com, fernandahairbeauty.com, fernanda.hair or fernandaramirez.hair had a website on it; availability still needs a registrar's yes.</li>
+          <li>Which of the four directions made you smile first.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <section class="reveal no-print" style="--i:9" aria-labelledby="h-share">
-      <h2 id="h-share" data-t="share_h">Send this to a friend</h2>
-      <button type="button" class="btn" id="share" data-t="share">Share this card</button>
-      <p class="note" id="share-note" aria-live="polite"></p>
-    </section>
+<footer>
+  <p>Design proposal by Page Studio for Fernanda Ramirez, 20 November 2026. Photographs are Fernanda's own public Instagram posts, shown only to present the proposal. Prices and hours were read from public listings on that date and need her confirmation. Every page here opens from disk, sends nothing and saves nothing. Sources and what was not found: <code>research/notes.md</code>; the facts behind every page: <code>proposal/data.js</code>.</p>
+</footer>
 
-    <footer class="reveal" style="--i:10">
-      <p data-t="studio_line">A design proposal by Page Studio</p>
-      <p data-t="disclosure"></p>
-      <p data-t="image_limit"></p>
-    </footer>
-  </main>
-</div>
-
-<div class="bar is-hidden" id="bar">
-  <a class="btn btn-primary" href="#book" data-t="book">Book with Fernanda</a>
-</div>
-
-<script src="data.js"></script>
+<script src="index-data.js"></script>
 <script>
-window.__T__ = {
-  skip:        { en: "Skip to content", es: "Saltar al contenido" },
-  hero_alt:    { en: "Bright beige blonde balayage with a soft root", es: "Balayage rubio beige con raíz difuminada" },
-  open_label:  { en: "Salon hours, to confirm with Fernanda", es: "Horario del salón, por confirmar con Fernanda" },
-  work_hint:   { en: "Swipe, or use the arrows.", es: "Desliza o usa las flechas." },
-  prev:        { en: "Previous photos", es: "Fotos anteriores" },
-  next:        { en: "Next photos", es: "Siguientes fotos" },
-  strip_label: { en: "Photos of recent work", es: "Fotos de trabajos recientes" },
-  book_consult:{ en: "Book a consultation", es: "Reservar una consulta" },
-  gmaps:       { en: "Open in Google Maps", es: "Abrir en Google Maps" },
-  book_h:      { en: "Three ways to book", es: "Tres formas de reservar" },
-  book_sub:    { en: "Pick whichever is easiest for you.", es: "Elige la que te quede más fácil." },
-  slot_book:   { en: "The booking link gets connected at launch: Booksy once it is restored, or Square.", es: "El enlace de reserva se conecta al lanzar: Booksy cuando se restablezca, o Square." },
-  slot_text:   { en: "The text link is added once Fernanda confirms the number.", es: "El enlace para mensajes se agrega cuando Fernanda confirme el número." },
-  about_1:     { en: "Fernanda works in English and Spanish at Maribel's Beauty Salon in Richmond. Her focus is sunkissed blonde and colour correction, with precision cuts to match.", es: "Fernanda atiende en español e inglés en Maribel's Beauty Salon, en Richmond. Se dedica a rubios sunkissed y corrección de color, con cortes de precisión a juego." },
-  about_2:     { en: "Certified colourist; certificate details to confirm.", es: "Colorista certificada; detalles del certificado por confirmar." },
-  insta:       { en: "See more on Instagram", es: "Ver más en Instagram" },
-  share_h:     { en: "Send this to a friend", es: "Mándaselo a una amiga" },
-  share:       { en: "Share this card", es: "Compartir esta tarjeta" },
-  copied:      { en: "Link copied.", es: "Enlace copiado." },
-  copy_fail:   { en: "Copy the link from the address bar.", es: "Copia el enlace de la barra de direcciones." },
-  studio_line: { en: "A design proposal by Page Studio", es: "Una propuesta de diseño de Page Studio" },
-  image_limit: { en: "Photos are Instagram's 640px copies of Fernanda's posts. The finished site needs her original exports.", es: "Las fotos son las copias de 640 px de Instagram. El sitio final necesita sus archivos originales." }
-};
-</script>
-<script src="core.js"></script>
-<script>
-(function () {
-  var D = window.__DATA__, T = window.__T__;
-  function L() { return window.FH ? FH.lang() : 'en'; }
-  function t(k) { var s = T[k] || D.t[k]; if (!s) return ''; return s[L()] != null ? s[L()] : s.en; }
-  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
-  var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* the strip: rendered once; captions follow the language */
-  var strip = document.getElementById('strip');
-  var work = D.work.filter(function (w) { return !w.exclude; });
-  strip.innerHTML = work.map(function (w) {
-    var cw = Math.round(300 * w.w / w.h);
-    return '<figure style="--w:' + cw + 'px"><img src="' + w.file + '" width="' + w.w + '" height="' + w.h + '" alt="' + esc(w.en) + '" loading="lazy" decoding="async"><figcaption>' + esc(w.en) + '</figcaption></figure>';
-  }).join('');
-  function captions() {
-    var l = L(), figs = strip.querySelectorAll('figure');
-    for (var i = 0; i < figs.length; i++) {
-      var w = work[i], s = w[l] || w.en;
-      figs[i].querySelector('img').alt = s; figs[i].querySelector('figcaption').textContent = s;
+(function(){
+  document.documentElement.classList.add('js');
+  var D = window.__INDEX__ || null;
+  var get = function(o,p){ return p.split('.').reduce(function(a,k){ return a==null?undefined:a[k]; }, o); };
+  var els = document.querySelectorAll('[data-m]');
+  function yes(v){ return v===true?'Yes':v===false?'No':'not measured yet'; }
+  for (var i=0;i<els.length;i++){
+    var el = els[i], key = el.dataset.m, v;
+    if (!D){ if (!el.textContent) el.textContent = 'not measured yet'; continue; }
+    if (key === 'measured'){ el.textContent = D.measured; continue; }
+    if (key === 'summary.foldBook'){
+      var names = {d1:'Lookbook',d2:'La Carta',d3:'Before / After',d4:'Pocket',d5:'the blend'}, ok = [], no = [];
+      Object.keys(D.pages).forEach(function(k){ (D.pages[k].bookInFold390 ? ok : no).push(names[k]||k); });
+      el.textContent = ok.length ? 'Yes on ' + ok.join(', ') + (no.length ? '; below the fold on ' + no.join(', ') : '') : 'No direction yet';
+      continue;
     }
+    var parts = key.split('.'), pg = D.pages[parts[0]], f = parts[1];
+    if (!pg){ el.textContent = 'not built'; continue; }
+    var c = pg.check || {};
+    if (f === 'gate') v = c.failed ? (c.failed.length ? 'Failed: ' + c.failed.join(', ') : 'Passed: errors 0, outside requests 0, contrast fails 0, text under 13 px 0, targets under 24 px 0') : 'not checked yet';
+    else if (f === 'contrast') v = c.failed ? (c.contrast1440||0) + (c.contrast390||0) : '';
+    else if (f === 'small') v = c.failed ? (c.small1440||0) + (c.small390||0) : '';
+    else if (f === 'printPages') v = c.printPages != null ? c.printPages : '';
+    else if (f === 't44') v = c.failed ? c.t44warn390 : '';
+    else if (f === 'esFits') v = pg.esSideways390 === false ? 'Yes' : pg.esSideways390 === true ? 'No, scrolls sideways' : '';
+    else if (f === 'bookInFold390') v = yes(pg.bookInFold390) + (pg.stickyBook390 ? ' (plus a sticky bar)' : '');
+    else v = get(pg, f);
+    el.textContent = (v === undefined || v === null || v === '') ? 'not measured yet' : String(v);
   }
-  var thumb = document.getElementById('prog-thumb');
-  function prog() {
-    var max = strip.scrollWidth - strip.clientWidth;
-    var w = max > 0 ? strip.clientWidth / strip.scrollWidth * 100 : 100;
-    var x = max > 0 ? strip.scrollLeft / max * (100 - w) : 0;
-    thumb.style.width = w + '%'; thumb.style.left = x + '%';
-  }
-  strip.addEventListener('scroll', prog, { passive: true });
-  window.addEventListener('resize', prog);
-  var navs = document.querySelectorAll('[data-scroll]');
-  for (var n = 0; n < navs.length; n++) navs[n].addEventListener('click', function () {
-    strip.scrollBy({ left: (this.dataset.scroll === 'next' ? 1 : -1) * strip.clientWidth * 0.8, behavior: reduced ? 'auto' : 'smooth' });
-  });
-
-  /* services */
-  function dur(m, l) { if (!m) return ''; if (m < 60) return m + ' min'; var h = Math.floor(m / 60), r = m % 60; return h + ' h' + (r ? ' ' + r + ' min' : ''); }
-  function price(it, l) {
-    if (it.price == null) return t('consult');
-    var p = (l === 'es' ? it.price_prefix_es : it.price_prefix_en) || '';
-    return (p ? p + ' ' : '') + '$' + it.price + (it.duration_min ? ' · ' + dur(it.duration_min, l) : '');
-  }
-  function services() {
-    var l = L();
-    document.getElementById('services').innerHTML = D.services.groups.map(function (g) {
-      return '<h3>' + esc(g[l] || g.en) + '</h3>' + g.items.map(function (it) {
-        return '<div class="row"><div class="name">' + esc(it[l] || it.en) + '<span class="line">' + esc(l === 'es' ? it.line_es : it.line_en) + '</span></div><div class="meta">' + esc(price(it, l)) + '</div></div>';
-      }).join('');
-    }).join('');
-  }
-
-  /* the three ways to book */
-  function book() {
-    var l = L();
-    document.getElementById('channels').innerHTML = D.booking.channels.map(function (c) {
-      var label = c[l] || c.en;
-      if (c.id === 'dm') return '<div class="chw"><a class="btn ch" href="' + c.href + '" rel="noopener">' + esc(label) + '</a></div>';
-      var note = c.id === 'book' ? t('slot_book') : t('slot_text');
-      return '<div class="chw"><button type="button" class="btn ch" data-slot="' + c.id + '" aria-expanded="false" aria-controls="slot-' + c.id + '">' + esc(label) + '</button><p class="slot" id="slot-' + c.id + '">' + esc(note) + '</p></div>';
-    }).join('');
-  }
-  document.addEventListener('click', function (e) {
-    var b = e.target.closest && e.target.closest('[data-slot]'); if (!b) return;
-    var open = b.getAttribute('aria-expanded') === 'true';
-    b.setAttribute('aria-expanded', String(!open));
-    document.getElementById(b.getAttribute('aria-controls')).classList.toggle('is-open', !open);
-  });
-
-  /* share */
-  document.getElementById('share').addEventListener('click', function () {
-    var out = document.getElementById('share-note');
-    var data = { title: D.person.name, text: D.person.name + ' · ' + (L() === 'es' ? D.person.position_es : D.person.position_en), url: location.href };
-    var done = function () { out.textContent = t('copied'); };
-    var fail = function (err) { if (err && err.name === 'AbortError') return; out.textContent = t('copy_fail'); };
-    if (navigator.share) { navigator.share(data).then(function () { out.textContent = ''; }, fail); return; }
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(location.href).then(done, fail); else fail();
-  });
-
-  /* the sticky act: shown only while neither the top acts nor the book block is on screen */
-  var bar = document.getElementById('bar'), seen = {};
-  function upd() { var any = false; for (var k in seen) if (seen[k]) any = true; bar.classList.toggle('is-hidden', any); }
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { seen[e.target.id] = e.isIntersecting; }); upd(); }, { threshold: 0.15 });
-    io.observe(document.getElementById('acts')); io.observe(document.getElementById('book'));
-  } else bar.classList.remove('is-hidden');
-
-  function render() { captions(); services(); book(); prog(); }
-  render();
-  document.addEventListener('fh:lang', render);
-  window.addEventListener('load', prog);
+  if (D && D.pages.d5){ var r = document.getElementById('d5row'); if (r) r.hidden = false; var n = document.getElementById('blendnote'); if (n) n.textContent = 'The blend is built as the fifth page, d5-blend.html, and measured in the table above.'; }
+  var ready = function(){ document.documentElement.classList.add('ready'); };
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(ready, ready); else ready();
+  setTimeout(ready, 1200);
 })();
 </script>
 </body>
