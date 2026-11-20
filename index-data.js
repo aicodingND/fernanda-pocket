@@ -1,5 +1,5 @@
 window.__INDEX__ = {
- "measured": "2026-11-20 14:35",
+ "measured": "2026-11-20 14:52",
  "pages": {
   "d1": {
    "slug": "d1-lookbook",

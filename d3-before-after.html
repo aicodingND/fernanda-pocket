@@ -525,6 +525,34 @@ window.__T__ = {
   }
   range.addEventListener('input', function () { setPos(range.value); });
 
+  /* auto-sweep: the divider pans between after and before until she touches it; off under reduced motion */
+  (function () {
+    if (!cmp || !range) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var raf = 0, t0 = 0, phase = 0, on = false, stopped = false, period = 9000, amp = 32;
+    function frame(ts) {
+      if (!on || stopped) return;
+      if (!t0) t0 = ts;
+      var p = phase + (ts - t0) / period;
+      var v = 50 + amp * Math.sin(p * 2 * Math.PI);
+      range.value = Math.round(v); setPos(range.value);
+      raf = requestAnimationFrame(frame);
+    }
+    function start() {
+      if (stopped || on) return;
+      on = true; t0 = 0;
+      phase = Math.asin(Math.max(-1, Math.min(1, (+range.value - 50) / amp))) / (2 * Math.PI);
+      raf = requestAnimationFrame(frame);
+    }
+    function pause() { on = false; cancelAnimationFrame(raf); }
+    function stop() { stopped = true; pause(); }
+    ['pointerdown', 'touchstart', 'keydown'].forEach(function (e) { range.addEventListener(e, stop, { passive: true }); });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) start(); else pause(); }); }, { threshold: 0.4 }).observe(cmp);
+    } else start();
+    document.addEventListener('visibilitychange', function () { if (document.hidden) pause(); else start(); });
+  })();
+
   // plates: J/K and arrows
   var plates = Array.prototype.slice.call(document.querySelectorAll('[data-plate]'));
   function current() {
