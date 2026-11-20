@@ -1,5 +1,5 @@
 window.__INDEX__ = {
- "measured": "2026-11-20 13:48",
+ "measured": "2026-11-20 14:15",
  "pages": {
   "d1": {
    "slug": "d1-lookbook",
@@ -133,6 +133,40 @@ window.__INDEX__ = {
     "requests": 0,
     "sideways390": false,
     "printPages": 3,
+    "printContrast": 0,
+    "printSmall": 0
+   }
+  },
+  "d5": {
+   "slug": "d5-blend",
+   "h1440": 8940,
+   "book1440": 14,
+   "bookText1440": "Book",
+   "bookSize1440": "64x46",
+   "bookInFold1440": true,
+   "stickyBook1440": 0,
+   "photosInFold1440": 3,
+   "h390": 13165,
+   "book390": 383,
+   "bookText390": "Book with Fernanda",
+   "bookSize390": "350x56",
+   "bookInFold390": true,
+   "stickyBook390": 0,
+   "photosInFold390": 1,
+   "esSideways390": false,
+   "h390es": 13284,
+   "check": {
+    "failed": [],
+    "contrast1440": 0,
+    "contrast390": 0,
+    "small1440": 0,
+    "small390": 0,
+    "t24_390": 0,
+    "t44warn390": 0,
+    "errors": 0,
+    "requests": 0,
+    "sideways390": false,
+    "printPages": 1,
     "printContrast": 0,
     "printSmall": 0
    }

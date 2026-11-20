@@ -65,6 +65,7 @@ dl.facts dd{margin:0}
 .direction header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:end;margin-bottom:1.25rem}
 .direction header .kind{font-size:var(--s2);color:var(--ink-2)}
 .direction header .open{font-size:var(--s2);white-space:nowrap;padding:.85rem 0;display:inline-block}
+#blendopen a{font-size:var(--s2);padding:.85rem 0;display:inline-block}
 .shots{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,1fr);gap:1rem;margin:1.25rem 0 1.75rem;align-items:start}
 .shots a{display:block;border:1px solid var(--rule);background:var(--paper-2);overflow:hidden}
 .shots img{display:block;width:100%;height:auto}
@@ -202,6 +203,7 @@ html.js.ready .reveal:nth-child(2){transition-delay:.08s}
         <span class="num">02</span>
         <h2>Four directions</h2>
         <p>Each one commits to a different idea of the reader. Open them from disk; press <kbd>E</kbd> for Spanish and <kbd>B</kbd> to jump to booking on any of them.</p>
+        <p>The blend from 04 follows as a fifth card, built on the same core and measured the same way.</p>
         <p>Screenshots were taken on this machine at 1440 and 390 px wide after the pages passed their checks.</p>
       </aside>
       <div>
@@ -306,6 +308,31 @@ html.js.ready .reveal:nth-child(2){transition-delay:.08s}
           <p class="try">Try: narrow the window to a phone, tap Share, swipe the strip, <kbd>E</kbd> for Spanish.</p>
         </article>
 
+        <article class="direction" id="d5">
+          <header>
+            <div><h3>5 · The blend</h3><div class="kind">The recommendation in 04, built as a page on the same core</div></div>
+            <a class="open" href="d5-blend.html">Open the blend</a>
+          </header>
+          <div class="shots">
+            <a href="d5-blend.html"><img src="shots/d5-1440-fold.png" alt="The blend at 1440 px wide, first screen" width="1440" height="900"></a>
+            <a class="phone" href="d5-blend.html"><img src="shots/d5-390-fold.png" alt="The blend on a phone, first screen" width="780" height="1688"></a>
+          </div>
+          <div class="four">
+            <div><h3>Why</h3><p>Each slot comes from the direction that does it well. The Lookbook's plates and warm paper on a wide screen; the Pocket's order on a phone, with name, open-now and the Book act on the first screen and a Book bar that follows the thumb; La Carta's bilingual rows and one-sheet print; the Stage's divider on the colour plate, with the red before-and-after from her own feed.</p></div>
+            <div><h3>Draws on</h3><p>The four pages above, and nothing new. The divider sits on plate 01, so the proof comes before the catalogue.</p></div>
+            <div><h3>Does better</h3><p>Book on the first phone screen and a sticky bar for the rest of the scroll, a printed menu from the same file, and the before-and-after without a dark page around it.</p></div>
+            <div><h3>Costs</h3><p>The longest page of the five on a phone, and it still asks for her original exports and one before-and-after pair per colour appointment.</p></div>
+          </div>
+          <div class="measured"><dl>
+            <dt>Page height, 1440 / 390</dt><dd><span data-m="d5.h1440">not measured yet</span> / <span data-m="d5.h390"></span> px</dd>
+            <dt>First Book act from the top, 1440 / 390</dt><dd><span data-m="d5.book1440"></span> / <span data-m="d5.book390"></span> px</dd>
+            <dt>Book on the first phone screen</dt><dd data-m="d5.bookInFold390"></dd>
+            <dt>Photos on the first screen, 1440</dt><dd data-m="d5.photosInFold1440"></dd>
+            <dt>Checks</dt><dd data-m="d5.gate"></dd>
+          </dl></div>
+          <p class="try">Try: narrow the window to a phone and scroll past the first screen for the Book bar, drag the divider on plate 01, <kbd>E</kbd> for Spanish, then print preview for the one-sheet.</p>
+        </article>
+
       </div>
     </div>
   </section>
@@ -374,6 +401,7 @@ html.js.ready .reveal:nth-child(2){transition-delay:.08s}
           </tbody>
         </table>
         <p id="blendnote" class="flag">The blend is proposed here as a slot table. When it is built it appears as a fifth page beside the four, measured in the same table above.</p>
+        <p id="blendopen" hidden><a class="open" href="d5-blend.html">Open the blend</a></p>
       </div>
     </div>
   </section>
@@ -514,7 +542,7 @@ html.js.ready .reveal:nth-child(2){transition-delay:.08s}
     else v = get(pg, f);
     el.textContent = (v === undefined || v === null || v === '') ? 'not measured yet' : String(v);
   }
-  if (D && D.pages.d5){ var r = document.getElementById('d5row'); if (r) r.hidden = false; var n = document.getElementById('blendnote'); if (n) n.textContent = 'The blend is built as the fifth page, d5-blend.html, and measured in the table above.'; }
+  if (D && D.pages.d5){ var r = document.getElementById('d5row'); if (r) r.hidden = false; var n = document.getElementById('blendnote'); if (n) n.textContent = 'The blend is built as the fifth page, d5-blend.html, measured in the table above and shown as the fifth card in 02.'; var o = document.getElementById('blendopen'); if (o) o.hidden = false; }
   var ready = function(){ document.documentElement.classList.add('ready'); };
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(ready, ready); else ready();
   setTimeout(ready, 1200);
