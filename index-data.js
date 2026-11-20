@@ -1,5 +1,5 @@
 window.__INDEX__ = {
- "measured": "2026-11-20 14:15",
+ "measured": "2026-11-20 14:35",
  "pages": {
   "d1": {
    "slug": "d1-lookbook",
@@ -18,7 +18,7 @@ window.__INDEX__ = {
    "stickyBook390": 0,
    "photosInFold390": 1,
    "esSideways390": false,
-   "h390es": 12469,
+   "h390es": 12443,
    "check": {
     "failed": [],
     "contrast1440": 0,
@@ -71,14 +71,14 @@ window.__INDEX__ = {
   },
   "d3": {
    "slug": "d3-before-after",
-   "h1440": 11468,
+   "h1440": 11442,
    "book1440": 10,
    "bookText1440": "Book",
    "bookSize1440": "76x44",
    "bookInFold1440": true,
    "stickyBook1440": 0,
    "photosInFold1440": 0,
-   "h390": 11852,
+   "h390": 11827,
    "book390": 9,
    "bookText390": "Book",
    "bookSize390": "72x44",
@@ -86,7 +86,7 @@ window.__INDEX__ = {
    "stickyBook390": 0,
    "photosInFold390": 0,
    "esSideways390": false,
-   "h390es": 12095,
+   "h390es": 12049,
    "check": {
     "failed": [],
     "contrast1440": 0,
@@ -154,7 +154,7 @@ window.__INDEX__ = {
    "stickyBook390": 0,
    "photosInFold390": 1,
    "esSideways390": false,
-   "h390es": 13284,
+   "h390es": 13258,
    "check": {
     "failed": [],
     "contrast1440": 0,

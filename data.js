@@ -25,7 +25,7 @@ window.__DATA__ = {
     area_en: "Richmond, in the East Bay", area_es: "Richmond, en el East Bay",
     maps_apple: "https://maps.apple.com/?q=12669+San+Pablo+Ave+Richmond+CA+94805",
     maps_google: "https://www.google.com/maps/search/?api=1&query=12669+San+Pablo+Ave+Richmond+CA+94805",
-    address_source: "Fernanda's own Booksy listing (cached search result) and the salon's Fresha page both give 12669 San Pablo Ave. MapQuest lists a Maribel's Beauty Salon at 232 23rd St, 94804: a second location or a stale record until Fernanda says.",
+    address_source: "A cached search result of Fernanda's earlier booking-app listing and the salon's Fresha page both give 12669 San Pablo Ave. MapQuest lists a Maribel's Beauty Salon at 232 23rd St, 94804: a second location or a stale record until Fernanda confirms.",
     confirm: true,
     hours: {
       source: "Salon hours from its Fresha page, read 2026-11-20. Fernanda's own days may differ.",
@@ -42,20 +42,18 @@ window.__DATA__ = {
     }
   },
   booking: {
-    finding_en: "On 2026-11-20 Fernanda's Booksy page redirected to Booksy's 'business deleted' notice, while her Instagram highlight still sends clients to the Booksy app.",
-    finding_es: "El 20-11-2026 la página de Booksy de Fernanda redirigía al aviso de 'negocio eliminado', mientras su historia destacada todavía manda a la app de Booksy.",
-    booksy_url: null,
-    booksy_cached: "Cached listing: 'FernadaHair and Beauty Professional', 12669 San Pablo Ave, Richmond 94805; Hairstyling, 3 services; one service shown at $85 (25% off to $63.75), 1h 30min.",
+    finding_en: "On 2026-11-20 Fernanda's Instagram highlight 'Book NOW.' still pointed to a booking app she has since left. A client who taps it reaches nothing.",
+    finding_es: "El 20-11-2026 la historia destacada 'Book NOW.' de Fernanda todavía apuntaba a una app de reservas que ella ya dejó. Una clienta que la toca no llega a nada.",
     square_salon_url: "https://book.squareup.com/appointments/irxrs63f1calix/location/L2S28CZ0XJSE0/services",
     square_note: "The salon's Square page lists Cortes de Damas, Cortes de Caballero, Tintes and Wax. It is the salon's list, not Fernanda's own.",
     phone: null,
     channels: [
-      { id: "book", en: "Book online",          es: "Reservar en línea",     href: "#book", slot: "Booksy or Square link; her Booksy listing was offline on 2026-11-20" },
+      { id: "book", en: "Book online",          es: "Reservar en línea",     href: "#book", slot: "the booking link she chooses, or a text" },
       { id: "text", en: "Text Fernanda",         es: "Escríbele a Fernanda",  href: "#book", slot: "sms: link once the number is confirmed" },
       { id: "dm",   en: "Message on Instagram",  es: "Mensaje por Instagram", href: "https://ig.me/m/fernanda_hairbeuty", slot: null }
     ]
   },
-  highlights: ["Booksy app", "Bob cut!", "Balayage!", "Destacada", "Book NOW.", "Keratina!!!", "Certificado", "Face framing", "Copper!"],
+  highlights: ["Bob cut!", "Balayage!", "Destacada", "Book NOW.", "Keratina!!!", "Certificado", "Face framing", "Copper!"],
   services: {
     note_en: "Prices come from public listings read on 2026-11-20. Colour work is quoted at a consultation after seeing the hair.",
     note_es: "Los precios vienen de listados públicos leídos el 20-11-2026. El color se cotiza en consulta, después de ver el cabello.",
@@ -118,7 +116,7 @@ window.__DATA__ = {
     work:        { en: "Recent work",             es: "Trabajos recientes" },
     about:       { en: "About Fernanda",          es: "Sobre Fernanda" },
     reviews:     { en: "Reviews",                 es: "Reseñas" },
-    reviews_empty: { en: "Reviews from Booksy and Google will appear here once they are connected.", es: "Las reseñas de Booksy y Google aparecerán aquí cuando estén conectadas." },
+    reviews_empty: { en: "Reviews from Google will appear here once they are connected.", es: "Las reseñas de Google aparecerán aquí cuando estén conectadas." },
     consult:     { en: "Quoted at consultation",  es: "Precio en consulta" },
     new_here:    { en: "New here? Start with a consultation.", es: "¿Primera vez? Empieza con una consulta." },
     min:         { en: "min",                     es: "min" },
